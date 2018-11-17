@@ -13,7 +13,7 @@ try {
 		 * @return {boolean}
 		 */
 		window.isNumber = function(value) {
-			return typeof value === 'number' && !isNaN(value) && isFinite(value);
+			return typeof value === 'number' && !window.isNaN(value) && window.isFinite(value);
 		};
 	})();
 }catch(e) {
