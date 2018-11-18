@@ -7,12 +7,12 @@ try {
 		'use strict';
 
 		/**
-		 * @name isNumber
+		 * @name isInteger
 		 * @since 2017-12-06
 		 * @param {*} value
 		 * @return {boolean}
 		 */
-		window.isNumber = function(value) {
+		window.isInteger = function(value) {
 			return typeof value === 'number' && !isNaN(value) && isFinite(value);
 		};
 	})(window.isNaN, window.isFinite);
